@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 63652216}
   m_Layer: 0
   m_Name: Float2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,12 +264,12 @@ GameObject:
   m_Component:
   - component: {fileID: 241807109}
   - component: {fileID: 241807108}
-  - component: {fileID: 241807110}
   - component: {fileID: 241807111}
   - component: {fileID: 241807112}
+  - component: {fileID: 241807110}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -348,12 +348,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 241807107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8582b6476f5555a4a6dccf146eca38f, type: 3}
+  m_Script: {fileID: 11500000, guid: 51ad6cffd5a49e945af20618184c5051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getUp: 0
-  jumpStarted: 0
-  jumpFrames: 0
+  moveForce: 10
+  jumpForce: 11
+  myBody: {fileID: 0}
 --- !u!50 &241807111
 Rigidbody2D:
   serializedVersion: 4
@@ -369,12 +369,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &241807112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 266666244}
   m_Layer: 0
   m_Name: Float1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -546,7 +546,7 @@ GameObject:
   - component: {fileID: 285093669}
   m_Layer: 0
   m_Name: Ground1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -592,7 +592,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0, g: 0.8584906, b: 0.19879842, a: 1}
+  m_Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -624,7 +624,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285093665}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 346609381}
   m_Layer: 0
   m_Name: Float4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -887,10 +887,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 428662210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b64d68460681de9aa9220cdc72d90daf, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e91ae9e8581cdc40a2a7e18793e0aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followTransform: {fileID: 241807109}
 --- !u!1 &771346980
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +904,7 @@ GameObject:
   - component: {fileID: 771346981}
   m_Layer: 0
   m_Name: Slope1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1036,7 +1035,7 @@ GameObject:
   - component: {fileID: 922985720}
   m_Layer: 0
   m_Name: Float3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1167,7 +1166,7 @@ GameObject:
   - component: {fileID: 1068096241}
   m_Layer: 0
   m_Name: Ground2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1298,7 +1297,7 @@ GameObject:
   - component: {fileID: 1089308406}
   m_Layer: 0
   m_Name: Slope2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
