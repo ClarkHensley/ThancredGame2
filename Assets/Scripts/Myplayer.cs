@@ -11,6 +11,9 @@ public class Myplayer : MonoBehaviour
     [SerializeField]
     private float jumpForce = 11f;
 
+    [SerializeField]
+    private float rotationAmount = 2.0f;
+
     private float movementX;
     private float movementY;
     private float rotationZ;
@@ -68,17 +71,21 @@ public class Myplayer : MonoBehaviour
         transform.position += new Vector3(movementX, 0f, 0f) * moveForce * Time.deltaTime;
 
         if(movementX != 0){
-            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + ((movementX > 0) ? -2.0f : 2.0f));
+            float rotationConstant = (movementX > 0) ? -1.0f : 1.0f;
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant));
         }
 
     }
 
     void PlayerJump()
     {
+        rotationZ = transform.localRotation.eulerAngles.z;
+        float rotationZRad = rotationZ * Mathf.Deg2Rad;
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             isGrounded = false;
-            myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            myBody.AddForce(new Vector2(Mathf.Sin(rotationZRad) * jumpForce * -1, Mathf.Cos(rotationZRad) * jumpForce), ForceMode2D.Impulse);
         }
     }
 
