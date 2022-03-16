@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,10 @@ public class Myplayer : MonoBehaviour
     private float jumpForce = 11f;
 
     private float movementX;
+    private float movementY;
+    private float rotationZ;
+
+    private bool upright = true;
 
     [SerializeField]
     private Rigidbody2D myBody;
@@ -32,15 +37,40 @@ public class Myplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerMove();
-        PlayerJump();
+        if(upright){
+            PlayerBalance();
+            PlayerMove();
+            PlayerJump();
+            PlayerOrient();
+        
+        }
+    }
+
+    void PlayerBalance()
+    {
+        rotationZ = transform.localRotation.eulerAngles.z;
+
+        if(rotationZ != 0){
+            if(rotationZ < 180.0f)
+                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ - 0.3f);
+            else if (rotationZ >= 180.0f)
+                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + 0.3f);
+        
+        }
     }
 
     void PlayerMove()
     {
         movementX = Input.GetAxisRaw("Horizontal");
+        movementY = Input.GetAxisRaw("Vertical");
+        rotationZ = transform.localRotation.eulerAngles.z;
 
         transform.position += new Vector3(movementX, 0f, 0f) * moveForce * Time.deltaTime;
+
+        if(movementX != 0){
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + ((movementX > 0) ? -2.0f : 2.0f));
+        }
+
     }
 
     void PlayerJump()
@@ -52,6 +82,23 @@ public class Myplayer : MonoBehaviour
         }
     }
 
+    void PlayerOrient()
+    {
+
+        movementX = Input.GetAxisRaw("Horizontal");
+
+        Vector3 characterOrientation = transform.localScale;
+        if(movementX < 0){
+            characterOrientation.x = -1;
+        }
+        else if (movementX > 0){
+            characterOrientation.x = 1;
+        }
+
+        transform.localScale = characterOrientation;
+
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(GROUND_TAG))
@@ -60,3 +107,4 @@ public class Myplayer : MonoBehaviour
         }
     }
 }
+
