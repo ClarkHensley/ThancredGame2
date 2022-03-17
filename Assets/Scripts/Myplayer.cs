@@ -18,13 +18,13 @@ public class Myplayer : MonoBehaviour
     private float movementY;
     private float rotationZ;
 
-    private bool upright = true;
-
     [SerializeField]
     private Rigidbody2D myBody;
 
     private bool isGrounded;
     private string GROUND_TAG = "Ground";
+
+    private string ENEMY_TAG = "Enemy";
 
     private void Awake()
     {
@@ -40,13 +40,14 @@ public class Myplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(upright){
-            PlayerBalance();
-            PlayerMove();
+        rotationZ = transform.localRotation.eulerAngles.z;
+        Debug.Log(rotationZ);
+        PlayerBalance();
+        PlayerMove();
+        if (Input.GetButtonDown("Jump") && isGrounded)
             PlayerJump();
-            PlayerOrient();
+        PlayerOrient();
         
-        }
     }
 
     void PlayerBalance()
@@ -82,11 +83,8 @@ public class Myplayer : MonoBehaviour
         rotationZ = transform.localRotation.eulerAngles.z;
         float rotationZRad = rotationZ * Mathf.Deg2Rad;
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            isGrounded = false;
-            myBody.AddForce(new Vector2(Mathf.Sin(rotationZRad) * jumpForce * -1, Mathf.Cos(rotationZRad) * jumpForce), ForceMode2D.Impulse);
-        }
+        isGrounded = false;
+        myBody.AddForce(new Vector2(Mathf.Sin(rotationZRad) * jumpForce * -1, Mathf.Cos(rotationZRad) * jumpForce), ForceMode2D.Impulse);
     }
 
     void PlayerOrient()
@@ -112,6 +110,19 @@ public class Myplayer : MonoBehaviour
         {
             isGrounded = true;
         }
+
+        if (collision.gameObject.CompareTag(ENEMY_TAG)){
+
+            if(collision.otherCollider.GetType() == typeof(UnityEngine.CircleCollider2D)){
+                if(!isGrounded)
+                    PlayerJump();
+            }
+
+            else
+                Debug.Log("Player Damage");
+
+        }
+
     }
 }
 
