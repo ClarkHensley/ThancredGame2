@@ -26,9 +26,6 @@ public class Myplayer : MonoBehaviour
 
     private string ENEMY_TAG = "Enemy";
 
-    private int targetsHit = 0;
-    private string TARGET_TAG = "Target";
-
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -43,6 +40,8 @@ public class Myplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        rotationZ = transform.localRotation.eulerAngles.z;
+        Debug.Log(rotationZ);
         PlayerBalance();
         PlayerMove();
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -112,7 +111,7 @@ public class Myplayer : MonoBehaviour
             isGrounded = true;
         }
 
-        else if (collision.gameObject.CompareTag(ENEMY_TAG)){
+        if (collision.gameObject.CompareTag(ENEMY_TAG)){
 
             if(collision.otherCollider.GetType() == typeof(UnityEngine.CircleCollider2D)){
                 if(!isGrounded)
@@ -121,13 +120,6 @@ public class Myplayer : MonoBehaviour
 
             else
                 Debug.Log("Player Damage");
-
-        }
-
-        else if (collision.gameObject.CompareTag(TARGET_TAG)){
-
-           targetsHit++;
-           Debug.Log("Target Hit");
 
         }
 

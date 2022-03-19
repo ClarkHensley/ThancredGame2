@@ -26,7 +26,7 @@ public class CrawlingEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Home = new Vector3(startingx - range / 2, startingy, 0.0f);
+        Home = new Vector3(startingx, startingy, 0.0f);
         transform.position = Home;
 
     }
