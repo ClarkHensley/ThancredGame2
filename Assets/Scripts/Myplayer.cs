@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Myplayer : MonoBehaviour
 {
@@ -20,6 +21,12 @@ public class Myplayer : MonoBehaviour
 
     [SerializeField]
     private Rigidbody2D myBody;
+
+    [SerializeField]
+    private float accel = 0.25f;
+
+    private float currentVelocity = 0.0f;
+    private float oldMovementX = 0;
 
     private bool isGrounded;
     private string GROUND_TAG = "Ground";
@@ -43,7 +50,7 @@ public class Myplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerBalance();
+        //PlayerBalance();
         PlayerMove();
         if (Input.GetButtonDown("Jump") && isGrounded)
             PlayerJump();
@@ -67,15 +74,35 @@ public class Myplayer : MonoBehaviour
     void PlayerMove()
     {
         movementX = Input.GetAxisRaw("Horizontal");
+        if(movementX != 0)
+            oldMovementX = movementX;
         movementY = Input.GetAxisRaw("Vertical");
         rotationZ = transform.localRotation.eulerAngles.z;
 
-        transform.position += new Vector3(movementX, 0f, 0f) * moveForce * Time.deltaTime;
+        transform.position += new Vector3(oldMovementX, 0f, 0f) * currentVelocity * Time.deltaTime;
 
-        if(movementX != 0){
-            float rotationConstant = (movementX > 0) ? -1.0f : 1.0f;
-            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant));
+        if(Input.GetKey("left") || Input.GetKey("right")){
+        // Accelerating
+
+            if(currentVelocity < moveForce)
+                currentVelocity += accel;
+            else
+                currentVelocity = moveForce;
+
         }
+        else if(currentVelocity > 0){
+        // Decelerating
+            currentVelocity -= accel;
+
+        }
+        else{
+            currentVelocity = 0;
+            oldMovementX = 0;
+        }
+
+        /*if(movementX != 0){
+            float rotationConstant = (movementX > 0) ? -1.0f : 1.0f;
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant));*/
 
     }
 
@@ -120,7 +147,7 @@ public class Myplayer : MonoBehaviour
             }
 
             else
-                Debug.Log("Player Damage");
+                SceneManager.LoadScene("GameOver");
 
         }
 

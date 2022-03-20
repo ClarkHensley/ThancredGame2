@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /*****
  *
@@ -36,9 +37,11 @@ public class Timer : MonoBehaviour
             }
 
             else {
-                Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 runTimer = false;
+
+                SceneManager.LoadScene("GameOver");
+
             }
         }
 
