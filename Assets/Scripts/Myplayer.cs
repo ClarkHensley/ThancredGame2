@@ -41,7 +41,6 @@ public class Myplayer : MonoBehaviour
     void Update()
     {
         rotationZ = transform.localRotation.eulerAngles.z;
-        Debug.Log(rotationZ);
         PlayerBalance();
         PlayerMove();
         if (Input.GetButtonDown("Jump") && isGrounded)

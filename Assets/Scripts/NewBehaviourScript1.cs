@@ -5,7 +5,9 @@ using UnityEngine;
 public class NewBehaviourScript1 : MonoBehaviour
 {
     [SerializeField]
-    private Transform _targetA, _targetB;
+    private Transform _targetA;
+    [SerializeField]
+    private Transform _targetB;
     [SerializeField]
     private float _speed = 3.0f;
     private bool _movingToB = false;
