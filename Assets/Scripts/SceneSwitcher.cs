@@ -19,4 +19,8 @@ public class SceneSwitcher : MonoBehaviour
     public void GotoMenu(){
         SceneManager.LoadScene("Menu");
     }
+
+    public void GotoBackground(){
+        SceneManager.LoadScene("Background");
+    }
 }
