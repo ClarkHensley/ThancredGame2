@@ -15,6 +15,11 @@ public class Myplayer : MonoBehaviour
     [SerializeField]
     private float rotationAmount = 2.0f;
 
+    [SerializeField]
+    private bool doubleJump = false;
+
+    private bool hasDoubleJumped = false;
+
     private float movementX;
     private float movementY;
     private float rotationZ;
@@ -36,6 +41,8 @@ public class Myplayer : MonoBehaviour
     private int targetsHit = 0;
     private string TARGET_TAG = "Target";
 
+    private string DOUBLEJUMP_TAG = "DoubleJump";
+
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -52,7 +59,7 @@ public class Myplayer : MonoBehaviour
     {
         //PlayerBalance();
         PlayerMove();
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && ((isGrounded) || (doubleJump && !hasDoubleJumped)))
             PlayerJump();
         PlayerOrient();
         
@@ -111,7 +118,11 @@ public class Myplayer : MonoBehaviour
         rotationZ = transform.localRotation.eulerAngles.z;
         float rotationZRad = rotationZ * Mathf.Deg2Rad;
 
-        isGrounded = false;
+        if(isGrounded)
+            isGrounded = false;
+        else
+            hasDoubleJumped = true;
+
         myBody.AddForce(new Vector2(Mathf.Sin(rotationZRad) * jumpForce * -1, Mathf.Cos(rotationZRad) * jumpForce), ForceMode2D.Impulse);
     }
 
@@ -137,6 +148,7 @@ public class Myplayer : MonoBehaviour
         if (collision.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
+            hasDoubleJumped = false;
         }
 
         else if (collision.gameObject.CompareTag(ENEMY_TAG)){
@@ -154,8 +166,12 @@ public class Myplayer : MonoBehaviour
         else if (collision.gameObject.CompareTag(TARGET_TAG)){
 
            targetsHit++;
-           Debug.Log("Target Hit");
 
+        }
+
+        else if (collision.gameObject.CompareTag(DOUBLEJUMP_TAG)){
+
+            doubleJump = true;
         }
 
     }
