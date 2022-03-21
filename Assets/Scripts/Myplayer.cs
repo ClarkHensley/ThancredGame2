@@ -15,12 +15,6 @@ public class Myplayer : MonoBehaviour
     [SerializeField]
     private float rotationAmount = 0.5f;
 
-    [SerializeField]
-    private int numberOfTargets;
-
-    [SerializeField]
-    private string nextStage;
-
     private float movementX;
     private float movementY;
     private float rotationZ;
@@ -30,12 +24,6 @@ public class Myplayer : MonoBehaviour
 
     [SerializeField]
     private float accel = 0.25f;
-
-    [SerializeField]
-    private bool doubleJump = false;
-
-    private bool hasDoubleJumped = false;
-
 
     private float currentVelocity = 0.0f;
     private float oldMovementX = 0;
@@ -48,20 +36,9 @@ public class Myplayer : MonoBehaviour
     private int targetsHit = 0;
     private string TARGET_TAG = "Target";
 
-    private string DOUBLEJUMP_TAG = "DoubleJump";
-
-    private SpriteRenderer sr;
-
-    private Animator anim;
-    private string WALK_ANIMATION = "Walk";
-
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-
-        sr = GetComponent<SpriteRenderer>();
-
     }
 
     // Start is called before the first frame update
@@ -73,15 +50,17 @@ public class Myplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
+        //PlayerBalance();
+=======
         CheckWin();
         PlayerBalance();
+>>>>>>> main
         PlayerMove();
-        if (Input.GetButtonDown("Jump") && ((isGrounded) || (doubleJump && !hasDoubleJumped)))
-            PlayerJump(false);
+        if (Input.GetButtonDown("Jump") && isGrounded)
+            PlayerJump();
         PlayerOrient();
-        AnimatePlayer();
-
-
+        
     }
 
     void PlayerBalance()
@@ -133,15 +112,12 @@ public class Myplayer : MonoBehaviour
         }
     }
 
-    void PlayerJump(bool isEnemy)
+    void PlayerJump()
     {
         rotationZ = transform.localRotation.eulerAngles.z;
         float rotationZRad = rotationZ * Mathf.Deg2Rad;
 
-        if(isGrounded)
-            isGrounded = false;
-        else if(!isEnemy)
-            hasDoubleJumped = true;
+        isGrounded = false;
         myBody.AddForce(new Vector2(Mathf.Sin(rotationZRad) * jumpForce * -1, Mathf.Cos(rotationZRad) * jumpForce), ForceMode2D.Impulse);
     }
 
@@ -162,26 +138,18 @@ public class Myplayer : MonoBehaviour
 
     }
 
-    private void CheckWin(){
-
-        if(targetsHit >= numberOfTargets)
-            SceneManager.LoadScene(nextStage);
-
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
-            hasDoubleJumped = false;
         }
 
         else if (collision.gameObject.CompareTag(ENEMY_TAG)){
 
             if(collision.otherCollider.GetType() == typeof(UnityEngine.CircleCollider2D)){
                 if(!isGrounded)
-                    PlayerJump(true);
+                    PlayerJump();
             }
 
             else
@@ -192,36 +160,10 @@ public class Myplayer : MonoBehaviour
         else if (collision.gameObject.CompareTag(TARGET_TAG)){
 
            targetsHit++;
+           Debug.Log("Target Hit");
 
         }
 
-        else if (collision.gameObject.CompareTag(DOUBLEJUMP_TAG)){
-
-            doubleJump = true;
-
-        }
-
-
-    }
-
-    void AnimatePlayer()
-    {
-        if (movementX > 0) 
-        {
-            anim.SetBool(WALK_ANIMATION, true);
-            sr.flipX = false;
-         }
-
-        else if (movementX < 0)
-        {
-            anim.SetBool(WALK_ANIMATION, true);
-            sr.flipX = true;
-        }
-
-        else
-        {
-            anim.SetBool(WALK_ANIMATION, false);
-        }
     }
 }
 
