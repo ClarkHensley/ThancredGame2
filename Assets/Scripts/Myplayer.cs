@@ -36,9 +36,18 @@ public class Myplayer : MonoBehaviour
     private int targetsHit = 0;
     private string TARGET_TAG = "Target";
 
+    private SpriteRenderer sr;
+
+    private Animator anim;
+    private string WALK_ANIMATION = "Walk";
+
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+
+        sr = GetComponent<SpriteRenderer>();
+
     }
 
     // Start is called before the first frame update
@@ -55,7 +64,9 @@ public class Myplayer : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
             PlayerJump();
         PlayerOrient();
-        
+        AnimatePlayer();
+
+
     }
 
     void PlayerBalance()
@@ -158,6 +169,26 @@ public class Myplayer : MonoBehaviour
 
         }
 
+    }
+
+    void AnimatePlayer()
+    {
+        if (movementX > 0) 
+        {
+            anim.SetBool(WALK_ANIMATION, true);
+            sr.flipX = false;
+         }
+
+        else if (movementX < 0)
+        {
+            anim.SetBool(WALK_ANIMATION, true);
+            sr.flipX = true;
+        }
+
+        else
+        {
+            anim.SetBool(WALK_ANIMATION, false);
+        }
     }
 }
 
