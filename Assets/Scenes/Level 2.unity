@@ -6991,7 +6991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f745b9339a39947b3ee539f1c99b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0
   jumpForce: 15
 --- !u!50 &419682060
 Rigidbody2D:
@@ -11316,7 +11316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f745b9339a39947b3ee539f1c99b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0
   jumpForce: 15
 --- !u!50 &683297558
 Rigidbody2D:
@@ -13077,7 +13077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f745b9339a39947b3ee539f1c99b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 0
   jumpForce: 15
 --- !u!50 &835757603
 Rigidbody2D:
@@ -20906,8 +20906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f745b9339a39947b3ee539f1c99b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 15
+  speed: 0
+  jumpForce: 7
 --- !u!50 &1515315555
 Rigidbody2D:
   serializedVersion: 4
