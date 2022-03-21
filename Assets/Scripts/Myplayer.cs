@@ -50,6 +50,8 @@ public class Myplayer : MonoBehaviour
 
     private string DOUBLEJUMP_TAG = "DoubleJump";
 
+    private string SPIKE_TAG = "Spike";
+
     private SpriteRenderer sr;
 
     private Animator anim;
@@ -198,6 +200,12 @@ public class Myplayer : MonoBehaviour
         else if (collision.gameObject.CompareTag(DOUBLEJUMP_TAG)){
 
             doubleJump = true;
+
+        }
+
+        else if (collision.gameObject.CompareTag(SPIKE_TAG)){
+
+            SceneManager.LoadScene("GameOver");
 
         }
 
