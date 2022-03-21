@@ -50,12 +50,8 @@ public class Myplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
-        //PlayerBalance();
-=======
         CheckWin();
         PlayerBalance();
->>>>>>> main
         PlayerMove();
         if (Input.GetButtonDown("Jump") && isGrounded)
             PlayerJump();
