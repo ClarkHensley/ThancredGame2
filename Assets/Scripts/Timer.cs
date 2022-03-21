@@ -19,7 +19,8 @@ public class Timer : MonoBehaviour
 {
 
     [SerializeField]
-    private float timeRemaining = 120;
+    private float timeRemaining = 300;
+
     private bool runTimer = true;
     public Text timeText;
 
