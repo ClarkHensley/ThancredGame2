@@ -12,8 +12,8 @@ public class Myplayer : MonoBehaviour
     [SerializeField]
     private float jumpForce = 11f;
 
-    //[SerializeField]
-    //private float rotationAmount = 2.0f;
+    [SerializeField]
+    private float rotationAmount = 0.5f;
 
     [SerializeField]
     private int numberOfTargets;
@@ -74,7 +74,7 @@ public class Myplayer : MonoBehaviour
     void Update()
     {
         CheckWin();
-        //PlayerBalance();
+        PlayerBalance();
         PlayerMove();
         if (Input.GetButtonDown("Jump") && ((isGrounded) || (doubleJump && !hasDoubleJumped)))
             PlayerJump(false);
@@ -126,10 +126,11 @@ public class Myplayer : MonoBehaviour
             oldMovementX = 0;
         }
 
-        /*if(movementX != 0){
+        if(movementX != 0){
             float rotationConstant = (movementX > 0) ? -1.0f : 1.0f;
-            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant));*/
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant));
 
+        }
     }
 
     void PlayerJump(bool isEnemy)
