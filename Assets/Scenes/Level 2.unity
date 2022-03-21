@@ -27044,9 +27044,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveForce: 10
   jumpForce: 11
-  rotationAmount: 0.5
-  numberOfTargets: 2
-  nextStage: VictoryScreen
+  rotationAmount: 15
+  numberOfTargets: 8
+  nextStage: Level 3
   myBody: {fileID: 0}
   accel: 0.25
   doubleJump: 0

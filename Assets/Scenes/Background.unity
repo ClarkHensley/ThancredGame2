@@ -3200,8 +3200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveForce: 10
   jumpForce: 11
-  rotationAmount: 0.5
-  numberOfTargets: 2
+  rotationAmount: 15
+  numberOfTargets: 8
   nextStage: Level 2
   myBody: {fileID: 0}
   accel: 0.25
@@ -13649,6 +13649,7 @@ GameObject:
   - component: {fileID: 1018121158}
   m_Layer: 0
   m_Name: Ground2 (2)
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

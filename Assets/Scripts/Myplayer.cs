@@ -13,7 +13,7 @@ public class Myplayer : MonoBehaviour
     private float jumpForce = 11f;
 
     [SerializeField]
-    private float rotationAmount = 0.5f;
+    private float rotationAmount = 15f;
 
     [SerializeField]
     private int numberOfTargets;
@@ -109,9 +109,9 @@ public class Myplayer : MonoBehaviour
 
         if(rotationZ != 0){
             if(rotationZ < 180.0f)
-                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ - 0.3f);
+                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ - (rotationAmount * Time.deltaTime));
             else if (rotationZ >= 180.0f)
-                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + 0.3f);
+                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * Time.deltaTime));
         
         }
     }
@@ -122,7 +122,6 @@ public class Myplayer : MonoBehaviour
         if(movementX != 0)
             oldMovementX = movementX;
         movementY = Input.GetAxisRaw("Vertical");
-        rotationZ = transform.localRotation.eulerAngles.z;
 
         transform.position += new Vector3(oldMovementX, 0f, 0f) * currentVelocity * Time.deltaTime;
 
@@ -146,7 +145,7 @@ public class Myplayer : MonoBehaviour
 
         if(movementX != 0){
             float rotationConstant = (movementX > 0) ? -1.0f : 1.0f;
-            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant));
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant * Time.deltaTime));
 
         }
     }
@@ -202,10 +201,10 @@ public class Myplayer : MonoBehaviour
         rotationZ = transform.localRotation.eulerAngles.z;
 
         if(rotationZ < 180){
-            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ - 1.0f);
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ - (rotationAmount * Time.deltaTime));
         }
         else if(rotationZ > 180){
-            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + 1.0f);
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * Time.deltaTime));
         }
 
     }
