@@ -356,7 +356,13 @@ MonoBehaviour:
   jumpForce: 11
   rotationAmount: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   myBody: {fileID: 0}
+=======
+  doubleJump: 0
+  myBody: {fileID: 0}
+  accel: 0.25
+>>>>>>> Stashed changes
 =======
   doubleJump: 0
   myBody: {fileID: 0}
@@ -378,7 +384,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GravityScale: 2
+=======
+  m_GravityScale: 1
+>>>>>>> Stashed changes
 =======
   m_GravityScale: 1
 >>>>>>> Stashed changes
@@ -1065,7 +1075,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1 &495930358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,6 +1210,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &741571979
 GameObject:
