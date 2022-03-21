@@ -11,22 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 78c5c4978597cadd98208fd5a921d7d7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: ee11a68b2a8c9606d9d86b5ea201c1e3
-  - enabled: 1
-    path: Assets/Scenes/Background.unity
-    guid: 3e36b8c5d867a0303aa6fa28d923c4f7
-  - enabled: 1
-    path: Assets/Scenes/Level 2.unity
-    guid: e745888c972d95241a4b18c870f1add9
-  - enabled: 1
-    path: Assets/Scenes/Level 3.unity
-    guid: babd9663057f806499b2f8ea260e23a1
-  - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: a793dea619a5a454f8c1e7610facc0ea
-  - enabled: 1
-    path: Assets/Scenes/VictoryScreen.unity
-    guid: 90b746411a55c5140ad01da7cdf52eb3
   m_configObjects: {}
