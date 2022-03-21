@@ -31,6 +31,12 @@ public class Myplayer : MonoBehaviour
     [SerializeField]
     private float accel = 0.25f;
 
+    [SerializeField]
+    private bool doubleJump = false;
+
+    private bool hasDoubleJumped = false;
+
+
     private float currentVelocity = 0.0f;
     private float oldMovementX = 0;
 
@@ -41,6 +47,8 @@ public class Myplayer : MonoBehaviour
 
     private int targetsHit = 0;
     private string TARGET_TAG = "Target";
+
+    private string DOUBLEJUMP_TAG = "DoubleJump";
 
     private SpriteRenderer sr;
 
@@ -68,8 +76,8 @@ public class Myplayer : MonoBehaviour
         CheckWin();
         //PlayerBalance();
         PlayerMove();
-        if (Input.GetButtonDown("Jump") && isGrounded)
-            PlayerJump();
+        if (Input.GetButtonDown("Jump") && ((isGrounded) || (doubleJump && !hasDoubleJumped)))
+            PlayerJump(false);
         PlayerOrient();
         AnimatePlayer();
 
@@ -124,12 +132,15 @@ public class Myplayer : MonoBehaviour
 
     }
 
-    void PlayerJump()
+    void PlayerJump(bool isEnemy)
     {
         rotationZ = transform.localRotation.eulerAngles.z;
         float rotationZRad = rotationZ * Mathf.Deg2Rad;
 
-        isGrounded = false;
+        if(isGrounded)
+            isGrounded = false;
+        else if(!isEnemy)
+            hasDoubleJumped = true;
         myBody.AddForce(new Vector2(Mathf.Sin(rotationZRad) * jumpForce * -1, Mathf.Cos(rotationZRad) * jumpForce), ForceMode2D.Impulse);
     }
 
@@ -162,13 +173,14 @@ public class Myplayer : MonoBehaviour
         if (collision.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
+            hasDoubleJumped = false;
         }
 
         else if (collision.gameObject.CompareTag(ENEMY_TAG)){
 
             if(collision.otherCollider.GetType() == typeof(UnityEngine.CircleCollider2D)){
                 if(!isGrounded)
-                    PlayerJump();
+                    PlayerJump(true);
             }
 
             else
@@ -181,6 +193,13 @@ public class Myplayer : MonoBehaviour
            targetsHit++;
 
         }
+
+        else if (collision.gameObject.CompareTag(DOUBLEJUMP_TAG)){
+
+            doubleJump = true;
+
+        }
+
 
     }
 
