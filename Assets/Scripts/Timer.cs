@@ -18,7 +18,9 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
 
-    private float timeRemaining = 10;
+    [SerializeField]
+    private float timeRemaining = 300;
+
     private bool runTimer = true;
     public Text timeText;
 
