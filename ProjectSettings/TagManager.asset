@@ -7,7 +7,6 @@ TagManager:
   - Ground
   - Enemy
   - Target
-  - DoubleJump
   layers:
   - Default
   - TransparentFX
@@ -42,6 +41,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 3009182749
+    locked: 0
+  - name: Layer
+    uniqueID: 325415333
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
