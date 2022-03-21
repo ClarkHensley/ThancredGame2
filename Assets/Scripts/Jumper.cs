@@ -19,7 +19,7 @@ public class Jumper : MonoBehaviour
     void Awake()
     {
          myBody = GetComponent<Rigidbody2D>();
-        speed = 0;
+        speed = -2;
     }
 
     // Update is called once per frame
