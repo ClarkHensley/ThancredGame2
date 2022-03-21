@@ -98,7 +98,6 @@ public class Myplayer : MonoBehaviour
                 PlayerFall();
 
         }
-        //PlayerOrient();
         AnimatePlayer();
 
 
