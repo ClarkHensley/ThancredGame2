@@ -7,8 +7,6 @@ TagManager:
   - Ground
   - Enemy
   - Target
-  - DoubleJump
-  - Spike
   layers:
   - Default
   - TransparentFX

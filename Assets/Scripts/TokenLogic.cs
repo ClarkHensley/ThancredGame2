@@ -7,9 +7,20 @@ public class TokenLogic : MonoBehaviour
 
     private string PLAYER_TAG = "Player";
 
+    [SerializeField]
+    private float startingx = -1.0f;
+
+    [SerializeField]
+    private float startingy = 1.3f;
+
+    private Vector3 Home;
+
     // Start is called before the first frame update
     void Start()
     {
+
+        Home = new Vector3(startingx, startingy, 0.0f);
+        transform.position = Home;
 
     }
 
