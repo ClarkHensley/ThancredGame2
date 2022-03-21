@@ -7,7 +7,6 @@ TagManager:
   - Ground
   - Enemy
   - Target
-  - DoubleJump
   layers:
   - Default
   - TransparentFX
