@@ -355,19 +355,6 @@ MonoBehaviour:
   moveForce: 10
   jumpForce: 11
   rotationAmount: 1
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  myBody: {fileID: 0}
-=======
-  doubleJump: 0
-  myBody: {fileID: 0}
-  accel: 0.25
->>>>>>> Stashed changes
-=======
-  doubleJump: 0
-  myBody: {fileID: 0}
-  accel: 0.25
->>>>>>> Stashed changes
 --- !u!50 &241807111
 Rigidbody2D:
   serializedVersion: 4
@@ -383,15 +370,6 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_GravityScale: 2
-=======
-  m_GravityScale: 1
->>>>>>> Stashed changes
-=======
-  m_GravityScale: 1
->>>>>>> Stashed changes
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1074,11 +1052,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e91ae9e8581cdc40a2a7e18793e0aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
 --- !u!1 &495930358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,10 +1183,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &741571979
 GameObject:
   m_ObjectHideFlags: 0
