@@ -12,8 +12,14 @@ public class Myplayer : MonoBehaviour
     [SerializeField]
     private float jumpForce = 11f;
 
+    //[SerializeField]
+    //private float rotationAmount = 2.0f;
+
     [SerializeField]
-    private float rotationAmount = 2.0f;
+    private int numberOfTargets;
+
+    [SerializeField]
+    private string nextStage;
 
     private float movementX;
     private float movementY;
@@ -50,6 +56,7 @@ public class Myplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckWin();
         //PlayerBalance();
         PlayerMove();
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -132,6 +139,13 @@ public class Myplayer : MonoBehaviour
 
     }
 
+    private void CheckWin(){
+
+        if(targetsHit >= numberOfTargets)
+            SceneManager.LoadScene(nextStage);
+
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(GROUND_TAG))
@@ -154,7 +168,6 @@ public class Myplayer : MonoBehaviour
         else if (collision.gameObject.CompareTag(TARGET_TAG)){
 
            targetsHit++;
-           Debug.Log("Target Hit");
 
         }
 
