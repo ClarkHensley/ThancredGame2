@@ -80,7 +80,6 @@ public class Myplayer : MonoBehaviour
         PlayerMove();
         if (Input.GetButtonDown("Jump") && ((isGrounded) || (doubleJump && !hasDoubleJumped)))
             PlayerJump(false);
-        PlayerOrient();
         AnimatePlayer();
 
 
@@ -145,23 +144,6 @@ public class Myplayer : MonoBehaviour
         else if(!isEnemy)
             hasDoubleJumped = true;
         myBody.AddForce(new Vector2(Mathf.Sin(rotationZRad) * jumpForce * -1, Mathf.Cos(rotationZRad) * jumpForce), ForceMode2D.Impulse);
-    }
-
-    void PlayerOrient()
-    {
-
-        movementX = Input.GetAxisRaw("Horizontal");
-
-        Vector3 characterOrientation = transform.localScale;
-        if(movementX < 0){
-            characterOrientation.x = -1;
-        }
-        else if (movementX > 0){
-            characterOrientation.x = 1;
-        }
-
-        transform.localScale = characterOrientation;
-
     }
 
     private void CheckWin(){

@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 4626661}
   m_Layer: 0
   m_Name: Spike_Up (111)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 6990220}
   m_Layer: 0
   m_Name: Spike_Up (168)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -807,7 +807,7 @@ GameObject:
   - component: {fileID: 39727432}
   m_Layer: 0
   m_Name: Spike_Up (126)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1299,7 +1299,7 @@ GameObject:
   - component: {fileID: 68235606}
   m_Layer: 0
   m_Name: Spike_Up (192)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1561,7 +1561,7 @@ GameObject:
   - component: {fileID: 90762953}
   m_Layer: 0
   m_Name: Spike_Up (138)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1692,7 +1692,7 @@ GameObject:
   - component: {fileID: 95702609}
   m_Layer: 0
   m_Name: Spike_Up (190)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1954,7 +1954,7 @@ GameObject:
   - component: {fileID: 114496660}
   m_Layer: 0
   m_Name: Spike_Up (186)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2115,7 +2115,7 @@ GameObject:
   - component: {fileID: 122706996}
   m_Layer: 0
   m_Name: Spike_Up (225)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2989,7 +2989,7 @@ GameObject:
   - component: {fileID: 163952570}
   m_Layer: 0
   m_Name: Spike_Up (146)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3120,7 +3120,7 @@ GameObject:
   - component: {fileID: 177218071}
   m_Layer: 0
   m_Name: Spike_Up (127)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3644,7 +3644,7 @@ GameObject:
   - component: {fileID: 206673780}
   m_Layer: 0
   m_Name: Spike_Up (222)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3775,7 +3775,7 @@ GameObject:
   - component: {fileID: 209669975}
   m_Layer: 0
   m_Name: Spike_Up (148)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4714,7 +4714,7 @@ GameObject:
   - component: {fileID: 262840715}
   m_Layer: 0
   m_Name: Spike_Up (121)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4845,7 +4845,7 @@ GameObject:
   - component: {fileID: 265855885}
   m_Layer: 0
   m_Name: Spike_Up (149)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4976,7 +4976,7 @@ GameObject:
   - component: {fileID: 267808588}
   m_Layer: 0
   m_Name: Spike_Up (115)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5149,7 +5149,7 @@ GameObject:
   - component: {fileID: 276942663}
   m_Layer: 0
   m_Name: Spike_Up (184)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5280,7 +5280,7 @@ GameObject:
   - component: {fileID: 286857986}
   m_Layer: 0
   m_Name: Spike_Up (172)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5471,7 +5471,7 @@ GameObject:
   - component: {fileID: 306567658}
   m_Layer: 0
   m_Name: Spike_Up (182)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5733,7 +5733,7 @@ GameObject:
   - component: {fileID: 335446847}
   m_Layer: 0
   m_Name: Spike_Up (214)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5995,7 +5995,7 @@ GameObject:
   - component: {fileID: 339970399}
   m_Layer: 0
   m_Name: Spike_Up (152)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6126,7 +6126,7 @@ GameObject:
   - component: {fileID: 344498456}
   m_Layer: 0
   m_Name: Spike_Up (196)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6257,7 +6257,7 @@ GameObject:
   - component: {fileID: 357621094}
   m_Layer: 0
   m_Name: Spike_Up (216)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6388,7 +6388,7 @@ GameObject:
   - component: {fileID: 376453983}
   m_Layer: 0
   m_Name: Spike_Up (141)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6681,7 +6681,7 @@ GameObject:
   - component: {fileID: 407194637}
   m_Layer: 0
   m_Name: Spike_Up (208)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7283,7 +7283,7 @@ GameObject:
   - component: {fileID: 424710339}
   m_Layer: 0
   m_Name: Spike_Up (154)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7676,7 +7676,7 @@ GameObject:
   - component: {fileID: 456279552}
   m_Layer: 0
   m_Name: Spike_Up (181)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7807,7 +7807,7 @@ GameObject:
   - component: {fileID: 464016311}
   m_Layer: 0
   m_Name: Spike_Up (158)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7938,7 +7938,7 @@ GameObject:
   - component: {fileID: 477297023}
   m_Layer: 0
   m_Name: Spike_Up (140)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8069,7 +8069,7 @@ GameObject:
   - component: {fileID: 497345671}
   m_Layer: 0
   m_Name: Spike_Up (135)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8200,7 +8200,7 @@ GameObject:
   - component: {fileID: 498746496}
   m_Layer: 0
   m_Name: Spike_Up (125)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8477,7 +8477,7 @@ GameObject:
   - component: {fileID: 499966675}
   m_Layer: 0
   m_Name: Spike_Up (195)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8739,7 +8739,7 @@ GameObject:
   - component: {fileID: 510138768}
   m_Layer: 0
   m_Name: Spike_Up (130)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9074,7 +9074,7 @@ GameObject:
   - component: {fileID: 525651802}
   m_Layer: 0
   m_Name: Spike_Up (169)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9205,7 +9205,7 @@ GameObject:
   - component: {fileID: 540467613}
   m_Layer: 0
   m_Name: Spike_Up (194)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9467,7 +9467,7 @@ GameObject:
   - component: {fileID: 547071877}
   m_Layer: 0
   m_Name: Spike_Up (200)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9598,7 +9598,7 @@ GameObject:
   - component: {fileID: 573577945}
   m_Layer: 0
   m_Name: Spike_Up (165)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9729,7 +9729,7 @@ GameObject:
   - component: {fileID: 585752509}
   m_Layer: 0
   m_Name: Spike_Up (166)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9860,7 +9860,7 @@ GameObject:
   - component: {fileID: 597011133}
   m_Layer: 0
   m_Name: Spike_Up (139)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10269,7 +10269,7 @@ GameObject:
   - component: {fileID: 611544603}
   m_Layer: 0
   m_Name: Spike_Up (228)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10774,7 +10774,7 @@ GameObject:
   - component: {fileID: 629778174}
   m_Layer: 0
   m_Name: Spike_Up (210)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10905,7 +10905,7 @@ GameObject:
   - component: {fileID: 647427906}
   m_Layer: 0
   m_Name: Spike_Up (155)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11036,7 +11036,7 @@ GameObject:
   - component: {fileID: 657438751}
   m_Layer: 0
   m_Name: Spike_Up (218)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11444,7 +11444,7 @@ GameObject:
   - component: {fileID: 697301793}
   m_Layer: 0
   m_Name: Spike_Up (187)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11575,7 +11575,7 @@ GameObject:
   - component: {fileID: 701675054}
   m_Layer: 0
   m_Name: Spike_Up (206)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11837,7 +11837,7 @@ GameObject:
   - component: {fileID: 728947607}
   m_Layer: 0
   m_Name: Spike_Up (153)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11968,7 +11968,7 @@ GameObject:
   - component: {fileID: 729335954}
   m_Layer: 0
   m_Name: Spike_Up (203)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12099,7 +12099,7 @@ GameObject:
   - component: {fileID: 739361106}
   m_Layer: 0
   m_Name: Spike_Up (150)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12404,7 +12404,7 @@ GameObject:
   - component: {fileID: 768140791}
   m_Layer: 0
   m_Name: Spike_Up (180)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13205,7 +13205,7 @@ GameObject:
   - component: {fileID: 848563562}
   m_Layer: 0
   m_Name: Spike_Up (212)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13336,7 +13336,7 @@ GameObject:
   - component: {fileID: 861958988}
   m_Layer: 0
   m_Name: Spike_Up (145)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13467,7 +13467,7 @@ GameObject:
   - component: {fileID: 873185646}
   m_Layer: 0
   m_Name: Spike_Up (143)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13774,7 +13774,7 @@ GameObject:
   - component: {fileID: 924821329}
   m_Layer: 0
   m_Name: Spike_Up (157)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14002,7 +14002,7 @@ GameObject:
   - component: {fileID: 945767247}
   m_Layer: 0
   m_Name: Spike_Up (197)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14133,7 +14133,7 @@ GameObject:
   - component: {fileID: 963718041}
   m_Layer: 0
   m_Name: Spike_Up (112)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14357,7 +14357,7 @@ GameObject:
   - component: {fileID: 981039704}
   m_Layer: 0
   m_Name: Spike_Up (134)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14650,7 +14650,7 @@ GameObject:
   - component: {fileID: 1009394476}
   m_Layer: 0
   m_Name: Spike_Up (129)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14781,7 +14781,7 @@ GameObject:
   - component: {fileID: 1014591245}
   m_Layer: 0
   m_Name: Spike_Up (131)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14912,7 +14912,7 @@ GameObject:
   - component: {fileID: 1019431132}
   m_Layer: 0
   m_Name: Spike_Up (123)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15043,7 +15043,7 @@ GameObject:
   - component: {fileID: 1027739393}
   m_Layer: 0
   m_Name: Spike_Up (167)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15174,7 +15174,7 @@ GameObject:
   - component: {fileID: 1059914716}
   m_Layer: 0
   m_Name: Spike_Up (217)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15305,7 +15305,7 @@ GameObject:
   - component: {fileID: 1095115049}
   m_Layer: 0
   m_Name: Spike_Up (185)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15585,7 +15585,7 @@ GameObject:
   - component: {fileID: 1110089460}
   m_Layer: 0
   m_Name: Spike_Up (114)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15716,7 +15716,7 @@ GameObject:
   - component: {fileID: 1110831422}
   m_Layer: 0
   m_Name: Spike_Up (116)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15978,7 +15978,7 @@ GameObject:
   - component: {fileID: 1126892977}
   m_Layer: 0
   m_Name: Spike_Up (183)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16146,7 +16146,7 @@ GameObject:
   - component: {fileID: 1154671677}
   m_Layer: 0
   m_Name: Spike_Up (109)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16423,7 +16423,7 @@ GameObject:
   - component: {fileID: 1179492950}
   m_Layer: 0
   m_Name: Spike_Up (199)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16685,7 +16685,7 @@ GameObject:
   - component: {fileID: 1184704860}
   m_Layer: 0
   m_Name: Spike_Up (211)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17041,7 +17041,7 @@ GameObject:
   - component: {fileID: 1211462198}
   m_Layer: 0
   m_Name: Spike_Up (110)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17172,7 +17172,7 @@ GameObject:
   - component: {fileID: 1212939610}
   m_Layer: 0
   m_Name: Spike_Up (174)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17434,7 +17434,7 @@ GameObject:
   - component: {fileID: 1216942294}
   m_Layer: 0
   m_Name: Spike_Up (226)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17696,7 +17696,7 @@ GameObject:
   - component: {fileID: 1286138706}
   m_Layer: 0
   m_Name: Spike_Up (189)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17827,7 +17827,7 @@ GameObject:
   - component: {fileID: 1293565284}
   m_Layer: 0
   m_Name: Spike_Up (128)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18089,7 +18089,7 @@ GameObject:
   - component: {fileID: 1324288444}
   m_Layer: 0
   m_Name: Spike_Up (120)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18351,7 +18351,7 @@ GameObject:
   - component: {fileID: 1347036746}
   m_Layer: 0
   m_Name: Spike_Up (160)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18482,7 +18482,7 @@ GameObject:
   - component: {fileID: 1357696118}
   m_Layer: 0
   m_Name: Spike_Up (162)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18613,7 +18613,7 @@ GameObject:
   - component: {fileID: 1393868579}
   m_Layer: 0
   m_Name: Spike_Up (161)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18878,7 +18878,7 @@ GameObject:
   - component: {fileID: 1404403789}
   m_Layer: 0
   m_Name: Spike_Up (171)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19009,7 +19009,7 @@ GameObject:
   - component: {fileID: 1418031885}
   m_Layer: 0
   m_Name: Spike_Up (173)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19140,7 +19140,7 @@ GameObject:
   - component: {fileID: 1422311091}
   m_Layer: 0
   m_Name: Spike_Up (132)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19301,7 +19301,7 @@ GameObject:
   - component: {fileID: 1447799969}
   m_Layer: 0
   m_Name: Spike_Up (178)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19578,7 +19578,7 @@ GameObject:
   - component: {fileID: 1467037729}
   m_Layer: 0
   m_Name: Spike_Up (220)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19709,7 +19709,7 @@ GameObject:
   - component: {fileID: 1467360256}
   m_Layer: 0
   m_Name: Spike_Up (117)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20233,7 +20233,7 @@ GameObject:
   - component: {fileID: 1495586740}
   m_Layer: 0
   m_Name: Spike_Up (193)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20364,7 +20364,7 @@ GameObject:
   - component: {fileID: 1506155125}
   m_Layer: 0
   m_Name: Spike_Up (113)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20626,7 +20626,7 @@ GameObject:
   - component: {fileID: 1513876874}
   m_Layer: 0
   m_Name: Spike_Up (179)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20757,7 +20757,7 @@ GameObject:
   - component: {fileID: 1515241141}
   m_Layer: 0
   m_Name: Spike_Up (144)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21265,7 +21265,7 @@ GameObject:
   - component: {fileID: 1551103998}
   m_Layer: 0
   m_Name: Spike_Up (198)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21396,7 +21396,7 @@ GameObject:
   - component: {fileID: 1551199960}
   m_Layer: 0
   m_Name: Spike_Up (227)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21834,7 +21834,7 @@ GameObject:
   - component: {fileID: 1571570205}
   m_Layer: 0
   m_Name: Spike_Up (223)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22270,7 +22270,7 @@ GameObject:
   - component: {fileID: 1638589678}
   m_Layer: 0
   m_Name: Spike_Up (147)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22401,7 +22401,7 @@ GameObject:
   - component: {fileID: 1649857655}
   m_Layer: 0
   m_Name: Spike_Up (159)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22532,7 +22532,7 @@ GameObject:
   - component: {fileID: 1651866007}
   m_Layer: 0
   m_Name: Spike_Up (204)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22663,7 +22663,7 @@ GameObject:
   - component: {fileID: 1662605757}
   m_Layer: 0
   m_Name: Spike_Up (213)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22925,7 +22925,7 @@ GameObject:
   - component: {fileID: 1690939754}
   m_Layer: 0
   m_Name: Spike_Up (215)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23318,7 +23318,7 @@ GameObject:
   - component: {fileID: 1731262220}
   m_Layer: 0
   m_Name: Spike_Up (136)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23449,7 +23449,7 @@ GameObject:
   - component: {fileID: 1731328389}
   m_Layer: 0
   m_Name: Spike_Up (209)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23842,7 +23842,7 @@ GameObject:
   - component: {fileID: 1757081671}
   m_Layer: 0
   m_Name: Spike_Up (205)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23973,7 +23973,7 @@ GameObject:
   - component: {fileID: 1766072482}
   m_Layer: 0
   m_Name: Spike_Up (164)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24369,7 +24369,7 @@ GameObject:
   - component: {fileID: 1784095147}
   m_Layer: 0
   m_Name: Spike_Up (202)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24500,7 +24500,7 @@ GameObject:
   - component: {fileID: 1786796338}
   m_Layer: 0
   m_Name: Spike_Up (201)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24661,7 +24661,7 @@ GameObject:
   - component: {fileID: 1806104476}
   m_Layer: 0
   m_Name: Spike_Up (151)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25054,7 +25054,7 @@ GameObject:
   - component: {fileID: 1863963273}
   m_Layer: 0
   m_Name: Spike_Up (124)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25185,7 +25185,7 @@ GameObject:
   - component: {fileID: 1865414826}
   m_Layer: 0
   m_Name: Spike_Up (175)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25316,7 +25316,7 @@ GameObject:
   - component: {fileID: 1873003706}
   m_Layer: 0
   m_Name: Spike_Up (118)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25578,7 +25578,7 @@ GameObject:
   - component: {fileID: 1879425149}
   m_Layer: 0
   m_Name: Spike_Up (170)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25840,7 +25840,7 @@ GameObject:
   - component: {fileID: 1884515903}
   m_Layer: 0
   m_Name: Spike_Up (142)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25971,7 +25971,7 @@ GameObject:
   - component: {fileID: 1886267428}
   m_Layer: 0
   m_Name: Spike_Up (219)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26102,7 +26102,7 @@ GameObject:
   - component: {fileID: 1894868366}
   m_Layer: 0
   m_Name: Spike_Up (119)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26233,7 +26233,7 @@ GameObject:
   - component: {fileID: 1900380685}
   m_Layer: 0
   m_Name: Spike_Up (221)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26495,7 +26495,7 @@ GameObject:
   - component: {fileID: 1906123665}
   m_Layer: 0
   m_Name: Spike_Up (188)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26757,7 +26757,7 @@ GameObject:
   - component: {fileID: 1910444691}
   m_Layer: 0
   m_Name: Spike_Up (122)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27045,7 +27045,7 @@ MonoBehaviour:
   moveForce: 10
   jumpForce: 11
   rotationAmount: 0.5
-  numberOfTargets: 8
+  numberOfTargets: 2
   nextStage: VictoryScreen
   myBody: {fileID: 0}
   accel: 0.25
@@ -27241,7 +27241,7 @@ GameObject:
   - component: {fileID: 1978152919}
   m_Layer: 0
   m_Name: Spike_Up (133)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27372,7 +27372,7 @@ GameObject:
   - component: {fileID: 1991179992}
   m_Layer: 0
   m_Name: Spike_Up (207)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27503,7 +27503,7 @@ GameObject:
   - component: {fileID: 2031190650}
   m_Layer: 0
   m_Name: Spike_Up (137)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27765,7 +27765,7 @@ GameObject:
   - component: {fileID: 2049113635}
   m_Layer: 0
   m_Name: Spike_Up (177)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27896,7 +27896,7 @@ GameObject:
   - component: {fileID: 2066242483}
   m_Layer: 0
   m_Name: Spike_Up (191)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28158,7 +28158,7 @@ GameObject:
   - component: {fileID: 2103507563}
   m_Layer: 0
   m_Name: Spike_Up (163)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28289,7 +28289,7 @@ GameObject:
   - component: {fileID: 2105620069}
   m_Layer: 0
   m_Name: Spike_Up (176)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28594,7 +28594,7 @@ GameObject:
   - component: {fileID: 2122586831}
   m_Layer: 0
   m_Name: Spike_Up (156)
-  m_TagString: Enemy
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
