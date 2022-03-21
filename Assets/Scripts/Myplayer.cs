@@ -13,7 +13,7 @@ public class Myplayer : MonoBehaviour
     private float jumpForce = 11f;
 
     [SerializeField]
-    private float rotationAmount = 2.0f;
+    private float rotationAmount = 0.5f;
 
     private float movementX;
     private float movementY;
@@ -50,7 +50,12 @@ public class Myplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
         //PlayerBalance();
+=======
+        CheckWin();
+        PlayerBalance();
+>>>>>>> main
         PlayerMove();
         if (Input.GetButtonDown("Jump") && isGrounded)
             PlayerJump();
@@ -100,10 +105,11 @@ public class Myplayer : MonoBehaviour
             oldMovementX = 0;
         }
 
-        /*if(movementX != 0){
+        if(movementX != 0){
             float rotationConstant = (movementX > 0) ? -1.0f : 1.0f;
-            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant));*/
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant));
 
+        }
     }
 
     void PlayerJump()

@@ -8,12 +8,6 @@ public class CrawlingEnemy : MonoBehaviour
     private string PLAYER_TAG = "Player";
 
     [SerializeField]
-    private float startingx = -16.0f;
-
-    [SerializeField]
-    private float startingy = 2.5f;
-
-    [SerializeField]
     private float range = 5.0f;
 
     [SerializeField]
@@ -26,8 +20,8 @@ public class CrawlingEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Home = new Vector3(startingx - range / 2, startingy, 0.0f);
-        transform.position = Home;
+
+        Home = new Vector3(transform.position.x, transform.position.y, 0.0f);
 
     }
 
@@ -39,7 +33,6 @@ public class CrawlingEnemy : MonoBehaviour
 
     void EnemyMove(){
 
-        Home = new Vector3(startingx, startingy, 0.0f);
 
         if(Vector3.Distance(Home, transform.position) < range || turned){
             transform.position += new Vector3(speed, 0f, 0f) * Time.deltaTime * moveDir;
