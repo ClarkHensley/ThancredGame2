@@ -52,6 +52,8 @@ public class Myplayer : MonoBehaviour
 
     private string SPIKE_TAG = "Spike";
 
+    private bool fallen = false;
+
     private SpriteRenderer sr;
 
     private Animator anim;
@@ -74,12 +76,28 @@ public class Myplayer : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+
+        rotationZ = transform.localRotation.eulerAngles.z;
+
+        bool upright = (rotationZ <= 45 || rotationZ >= 315);
+
         CheckWin();
-        PlayerBalance();
-        PlayerMove();
-        if (Input.GetButtonDown("Jump") && ((isGrounded) || (doubleJump && !hasDoubleJumped)))
-            PlayerJump(false);
+        if(upright){
+            fallen = false;
+            PlayerBalance();
+            PlayerMove();
+            if (Input.GetButtonDown("Jump") && ((isGrounded) || (doubleJump && !hasDoubleJumped)))
+                PlayerJump(false);
+        }
+        else{
+            
+            if(fallen)
+                PlayerGetUp(); 
+            else
+                PlayerFall();
+
+        }
         AnimatePlayer();
 
 
@@ -110,7 +128,6 @@ public class Myplayer : MonoBehaviour
 
         if(Input.GetKey("left") || Input.GetKey("right")){
         // Accelerating
-
             if(currentVelocity < moveForce)
                 currentVelocity += accel;
             else
@@ -144,6 +161,53 @@ public class Myplayer : MonoBehaviour
         else if(!isEnemy)
             hasDoubleJumped = true;
         myBody.AddForce(new Vector2(Mathf.Sin(rotationZRad) * jumpForce * -1, Mathf.Cos(rotationZRad) * jumpForce), ForceMode2D.Impulse);
+    }
+
+    void PlayerOrient()
+    {
+
+        movementX = Input.GetAxisRaw("Horizontal");
+
+        Vector3 characterOrientation = transform.localScale;
+        if(movementX < 0){
+            characterOrientation.x = -1;
+        }
+        else if (movementX > 0){
+            characterOrientation.x = 1;
+        }
+
+        transform.localScale = characterOrientation;
+
+    }
+
+    void PlayerFall(){
+
+        movementX = Input.GetAxisRaw("Horizontal");
+
+        if(movementX < 0){
+
+           transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 90.0f);
+
+        }
+        else if (movementX > 0){
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 270.0f);
+        }
+
+        fallen = true;
+
+    }
+
+    void PlayerGetUp(){
+
+        rotationZ = transform.localRotation.eulerAngles.z;
+
+        if(rotationZ < 180){
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ - 1.0f);
+        }
+        else if(rotationZ > 180){
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + 1.0f);
+        }
+
     }
 
     private void CheckWin(){
