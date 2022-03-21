@@ -83,6 +83,7 @@ public class Myplayer : MonoBehaviour
         bool upright = (rotationZ <= 45 || rotationZ >= 315);
 
         CheckWin();
+        
         if(upright){
             fallen = false;
             PlayerBalance();
@@ -90,6 +91,7 @@ public class Myplayer : MonoBehaviour
             if (Input.GetButtonDown("Jump") && ((isGrounded) || (doubleJump && !hasDoubleJumped)))
                 PlayerJump(false);
         }
+        
         else{
             
             if(fallen)
@@ -98,6 +100,7 @@ public class Myplayer : MonoBehaviour
                 PlayerFall();
 
         }
+        
         AnimatePlayer();
 
 
