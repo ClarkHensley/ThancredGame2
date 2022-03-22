@@ -3331,7 +3331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveForce: 10
   jumpForce: 11
-  rotationAmount: 0.5
+  rotationAmount: 15
   numberOfTargets: 8
   nextStage: Level 2
   myBody: {fileID: 0}
@@ -9827,7 +9827,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744989419}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.475407, y: -7.631961, z: 6.221797}
+  m_LocalPosition: {x: 28.31, y: -7.52, z: 6.221797}
   m_LocalScale: {x: 1, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1934650745}
@@ -9934,7 +9934,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 8fdabad4c774f124b836b8616a7c57f2, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -29189,4 +29189,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-
