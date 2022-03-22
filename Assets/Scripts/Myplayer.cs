@@ -72,10 +72,7 @@ public class Myplayer : MonoBehaviour
     void Update()
     {   
 
-        bool upright = (rotationZ <= 45 || rotationZ >= 315);
-
         CheckWin();
-        PlayerBalance();
         PlayerMove();
         if (Input.GetButtonDown("Jump") && ((isGrounded) || (doubleJump && !hasDoubleJumped)))
             PlayerJump(false);
@@ -84,26 +81,12 @@ public class Myplayer : MonoBehaviour
 
     }
 
-    void PlayerBalance()
-    {
-        rotationZ = transform.localRotation.eulerAngles.z;
-
-        if(rotationZ != 0){
-            if(rotationZ < 180.0f)
-                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ - 3.0f);
-            else if (rotationZ >= 180.0f)
-                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + 3.0f);
-        
-        }
-    }
-
     void PlayerMove()
     {
         movementX = Input.GetAxisRaw("Horizontal");
         if(movementX != 0)
             oldMovementX = movementX;
         movementY = Input.GetAxisRaw("Vertical");
-        rotationZ = transform.localRotation.eulerAngles.z;
 
         transform.position += new Vector3(oldMovementX, 0f, 0f) * currentVelocity * Time.deltaTime;
 
@@ -125,17 +108,12 @@ public class Myplayer : MonoBehaviour
             oldMovementX = 0;
         }
 
-        if(movementX != 0){
-            float rotationConstant = (movementX > 0) ? -1.0f : 1.0f;
-            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant));
-
         }
     }
 
     void PlayerJump(bool isEnemy)
     {
-        rotationZ = transform.localRotation.eulerAngles.z;
-        float rotationZRad = rotationZ * Mathf.Deg2Rad;
+        float rotationZRad = transform.localRotation.eulerAngles.z * Mathf.Deg2Rad;
 
         if(isGrounded)
             isGrounded = false;
