@@ -108,7 +108,6 @@ public class Myplayer : MonoBehaviour
             oldMovementX = 0;
         }
 
-        }
     }
 
     void PlayerJump(bool isEnemy)
