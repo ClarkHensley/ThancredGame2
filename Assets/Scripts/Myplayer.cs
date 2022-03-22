@@ -13,7 +13,7 @@ public class Myplayer : MonoBehaviour
     private float jumpForce = 11f;
 
     [SerializeField]
-    private float rotationAmount = 15.0f;
+    private float rotationAmount = 0.5f;
 
     [SerializeField]
     private int numberOfTargets;
@@ -109,9 +109,9 @@ public class Myplayer : MonoBehaviour
 
         if(rotationZ != 0){
             if(rotationZ < 180.0f)
-                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ - (rotationAmount * Time.deltaTime));
+                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ - rotationAmount);
             else if (rotationZ >= 180.0f)
-                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * Time.deltaTime));
+                transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + rotationAmount);
         
         }
     }
@@ -146,7 +146,7 @@ public class Myplayer : MonoBehaviour
 
         if(movementX != 0){
             float rotationConstant = (movementX > 0) ? -1.0f : 1.0f;
-            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant * Time.deltaTime));
+            transform.localRotation = Quaternion.Euler(0.0f, 0.0f, rotationZ + (rotationAmount * rotationConstant));
 
         }
     }
